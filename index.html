@@ -7,19 +7,25 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  
   <link rel="stylesheet" href="css/home.css">
+  
+
   <script>
   // Picture element HTML5 shiv
   document.createElement("picture");
   </script>
   <script src="js/picturefill.min.js" async></script>
+
+
+
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="row">
-      <nav class="col-4">
+    
+    <div class="navigation">
+      <nav class="col-12">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="california.html">California</a></li>
@@ -29,14 +35,29 @@
         </ul>
       </nav>
     </div>
-    <div class="row">
+    
+    
+    <div class="header">
       <header class="col-4">
-        <h1><a href="index.html">Exploring the World.</a></h1>
+        <h1>Exploring the World.</h1>
         <p>Beautiful beaches, breath-taking sights, peaceful nature. These are just some of the great feelings to experience while traveling around the world.</p>
       </header>
     </div>
-    <div class="row sameHeights">
-      <article class="col-1-2" data-key="sameHeights">
+    
+
+
+    <div class="content">
+      <div class="sidebar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="california.html">California</a></li>
+          <li><a href="coming_soon.html">Hawaii</a></li>
+          <li><a href="coming_soon.html">Bahamas</a></li>
+          <li><a href="coming_soon.html">Machu Picchu</a></li>
+        </ul>
+      </div>
+
+      <article class="col-3">
         <h2>California</h2>
         <!-- RESPONSIVE IMAGES -->
         <picture>
@@ -48,7 +69,7 @@
         <p>Endless stretch of beautiful beaches and fantastic sights year-round!</p>
         <p><a href="california.html">Read more &gt;&gt;</a></p>
       </article>
-      <article class="col-1-2" data-key="sameHeights">
+      <article class="col-3">
         <h2>Hawaii</h2>
         <!-- RESPONSIVE IMAGES -->
         <picture>
@@ -60,7 +81,7 @@
         <p>Beautiful chain of islands with an amazing culture!</p>
         <p><a href="coming_soon.html">Read more &gt;&gt;</a></p>
       </article>
-      <article class="col-1-2" data-key="sameHeights">
+      <article class="col-3">
         <h2>Bahamas</h2>
         <!-- RESPONSIVE IMAGES -->
         <picture>
@@ -72,7 +93,7 @@
         <p>Amazing weather year round with lots of water activities for the entire family!</p>
         <p><a href="coming_soon.html">Read more &gt;&gt;</a></p>
       </article>
-      <article class="col-1-2" data-key="sameHeights">
+      <article class="col-3">
         <h2>Machu Picchu</h2>
         <!-- RESPONSIVE IMAGES -->
         <picture>
@@ -85,24 +106,15 @@
         <p><a href="coming_soon.html">Read more &gt;&gt;</a></p>
       </article>
     </div>
-    <div class="row">
-      <footer class="col-4">
+    
+
+    <div class="footer">
+      <footer class="col-12">
         <p>&copy; 2017 Yash Patel</p>
       </footer>
     </div>
   </div>
-  <!-- COLUMN HEIGHT FIX -->
-  <script src="js/easypeasy.js"></script>
-  <script type="text/javascript">
-  if ('addEventListener' in window) {
-    window.addEventListener('resize', function() {
-      sameHeights();
-    });
-    window.addEventListener('load', function() {
-      sameHeights();
-    });
-  }
-  </script>
+
 </body>
 
 </html>

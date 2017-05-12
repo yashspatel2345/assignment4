@@ -1,43 +1,149 @@
-div img {
-  width: 100%;
-  max-width: 225px;
+body {
+  background-color: black;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  background: #f3f3f3;
 }
 
 
-/* Media Query: Adjust header when screen gets small */
+nav {
+  margin: 0;
+  padding: 20px;
+  background-color: #2c3e50;
+}
 
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+}
+
+nav ul li a { 
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+
+header {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 500px;
+    background: url(../img/home/home-header-large.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+header h1 {
+  font-size: 3em;
+}
+
+
+header p, p {
+  font-size: 1.2em;
+}
+
+
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.content article {
+  flex-basis: 20%;
+}
+
+.content article img {
+  width: 100%;
+}
+
+
+.content .sidebar {
+  display: flex;
+  width: 10%; 
+  border-right: 1px solid black;
+}
+
+.content .sidebar ul {
+  padding: 0;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+
+}
+
+.content .sidebar ul li {
+  text-align: left;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #c5c5c5;
+  flex-flow: row nowrap;
+}
+
+.footer p {
+  font-size: 1em;
+}
+
+
+@media (max-width: 1100px) {
+  nav ul li {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: .8em;
+  }
+
+  .content .sidebar {
+    order: 1;
+    width: 100%;
+    border-right: none;
+    border-top: 1px solid black;
+  }
+
+  .content .sidebar ul {
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+
+  .content article {
+    flex-basis: 44%;
+  }
+}
+
+/* Media Query: Adjust header when screen gets small */
 @media (max-width: 701px) {
   header {
-    width: 100%;
-    height: 500px;
+    height: 300px;
     background: url(../img/home/home-header-medium.jpg) no-repeat;
     background-size: cover;
+    justify-content: center;
   }
+
   header h1 {
-    padding: 100px 0 0 10px;
-    margin: 0;
     font-size: 1.6em;
   }
   header p {
     font-size: 1em;
   }
-}
 
-
-/* Media Query: Adjust header when screen is large */
-
-@media (min-width: 702px) {
-  header {
-    width: 100%;
-    height: 500px;
-    background: url(../img/home/home-header-large.jpg) no-repeat;
-    background-size: cover;
-  }
-  header h1 {
-    font-size: 3em;
-  }
-  header p,
-  p {
-    font-size: 1.2em;
+  .content article {
+    flex-basis: 95%;
   }
 }
+
