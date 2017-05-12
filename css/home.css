@@ -21,6 +21,7 @@ nav ul {
   display: flex;
   flex-flow: wrap row;
   justify-content: space-around;
+  align-items: center; 
 }
 
 nav ul li a { 
@@ -181,3 +182,51 @@ article img:hover {
     transform: translateX(0);
   }
 }
+
+
+.svg-logo {
+  height: 50px;
+  animation: 3s ease-out 0s infinite svgLogo;
+}
+
+
+.svg-logo-path {
+  
+}
+
+
+@keyframes svgLogo {
+  0% {
+    fill: #DC4C46;
+  }
+  10% {
+    fill: #672E3B;
+  }
+  20% {
+    fill: #F3D6E4;
+  }
+  30% {
+    fill: #C48F65;
+  }
+  40% {
+    fill: #653A5E;
+  }
+  50% {
+    fill: #898E8C;
+  }
+  60% {
+    fill: #005960;
+  }
+  70% {
+    fill: #9C9A40;
+  }
+  80% {
+    fill: #4F84C4;
+  }
+  90% {
+    fill: #D2691E;
+  }
+  100% {
+    fill: #F6D155;
+  }
+} 
