@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Traveling the World</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/california.css">
+  <script>
+  // Picture element HTML5 shiv
+  document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="row">
+      <nav class="col-4">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="california.html">California</a></li>
+          <li><a href="coming_soon.html">Hawaii</a></li>
+          <li><a href="coming_soon.html">Bahamas</a></li>
+          <li><a href="coming_soon.html">Machu Picchu</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="row">
+      <header class="col-4">
+      </header>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <h1>California. Living the dream.</h1>
+        <p>I have lived in California for over 15 years and absolutely have fallen in love with the state! I have traveled around the world and there is no comparable feeling that I experience when I am back in California. There are endless number of beaches, numerous national parks, and a variety of terrains where one can have countless hours of fun. Here are some pictures from my explorations:</p>
+      </div>
+    </div>
+    <div class="row sameHeights">
+      <article class="col-2" data-key="sameHeights">
+        <h2>Night Sky</h2>
+        <img src="img/california/cali1.jpg" alt="California">
+      </article>
+      <article class="col-2" data-key="sameHeights">
+        <h2>Glacier Point</h2>
+        <img src="img/california/cali2.jpg" alt="Hawaii">
+      </article>
+    </div>
+    <div class="row sameHeights">
+      <article class="col-2" data-key="sameHeights">
+        <h2>Lake</h2>
+        <img src="img/california/cali3.jpg" alt="California">
+      </article>
+      <article class="col-2" data-key="sameHeights">
+        <h2>Waterfall</h2>
+        <img src="img/california/cali4.jpg" alt="Hawaii">
+      </article>
+    </div>
+    <div class="row">
+      <footer class="col-4">
+        <p>&copy; 2017 Yash Patel</p>
+      </footer>
+    </div>
+  </div>
+  <!-- COLUMN HEIGHT FIX -->
+  <script src="js/easypeasy.js"></script>
+  <script type="text/javascript">
+  if ('addEventListener' in window) {
+    window.addEventListener('resize', function() {
+      sameHeights();
+    });
+    window.addEventListener('load', function() {
+      sameHeights();
+    });
+  }
+  </script>
+</body>
+
+</html>

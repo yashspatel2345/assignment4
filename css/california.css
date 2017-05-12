@@ -1,0 +1,43 @@
+div img {
+  width: 100%;
+  max-width: 450px;
+  max-height: 450px;
+}
+
+
+/* Media Query: Adjust header when screen gets small */
+
+@media (max-width: 701px) {
+  header {
+    width: 100%;
+    height: 350px;
+    background: url(../img/california/cali-header-medium.jpg) no-repeat;
+    background-size: cover;
+  }
+  header h1 {
+    padding: 100px 0 0 10px;
+    margin: 0;
+    font-size: 1.6em;
+  }
+  header p {
+    font-size: 1em;
+  }
+}
+
+
+/* Media Query: Adjust header when screen is large */
+
+@media (min-width: 702px) {
+  header {
+    width: 100%;
+    height: 500px;
+    background: url(../img/california/cali-header-large.jpg) no-repeat;
+    background-size: cover;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
